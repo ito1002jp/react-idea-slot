@@ -10,7 +10,6 @@ export default class CategoryComponent extends React.Component {
 
   render() {
     return (
-      <TouchableOpacity>
 	<Card>
           <CardItem>
            <Body style={{flexDirection:'row', justifyContent:'space-between'}}>
@@ -19,7 +18,6 @@ export default class CategoryComponent extends React.Component {
            </Body>
          </CardItem>
        </Card>
-      </TouchableOpacity>
     );
   }
 }

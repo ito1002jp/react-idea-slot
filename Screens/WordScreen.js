@@ -1,6 +1,6 @@
 import React from 'react';
 import { StyleSheet, Text, View, FlatList } from 'react-native';
-import { Container, Content, Header, Left, Right, Icon, Item, Input, Card, CardItem, Picker, Form } from 'native-base';
+import { Container, Content, Header, Left, Body, Right, Icon, Item, Input, Card, CardItem, Picker, Form } from 'native-base';
 import { createDrawerNavigator, createAppContainer } from 'react-navigation';
 import HeaderComponent from '../Components/HeaderComponent';
 import WordComponent from '../Components/WordComponent';
@@ -23,7 +23,15 @@ export default class WordScreen extends React.Component {
     return (
     <Container>
 
-      <HeaderComponent title="Word List"/>
+      <Header style={{ height: 70, backgroundColor: '#788B91' }}>
+        <Left style={{ marginLeft: 5 }}>
+          <Icon name="md-menu" style={{ color: 'white' }} onPress={()=>this.props.navigation.openDrawer()} />
+        </Left>
+        <Body>
+          <Text style={{ color: 'white', fontSize: 20 }}>Word List</Text>
+        </Body>
+        <Right />
+      </Header>
 
       <View style={{ height: 40, backgroundColor: '#788B91'}}>
 	<View style={{ marginLeft: 5, alignItems: 'center'}}>
