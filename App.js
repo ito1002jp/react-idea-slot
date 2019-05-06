@@ -56,7 +56,7 @@ const AppDrawerNavigator = new createDrawerNavigator(
 },
 {
   contentComponent: CustomDrawerContentComponent,
-  initialRouteName: "CategoryScreen"
+  initialRouteName: "IdeaSlotScreen"
 }
 )
 
